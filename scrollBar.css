@@ -10,11 +10,11 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b0e0e6; 
+  background: darkblue; 
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: darkblue; 
+  background: black; 
 }
