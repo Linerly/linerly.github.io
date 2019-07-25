@@ -12,7 +12,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: babyblue; 
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
