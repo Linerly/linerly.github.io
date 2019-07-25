@@ -2,12 +2,6 @@
 ::-webkit-scrollbar {
   width: 20px;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: dodgerblue;
-  border-radius: 0px;
-}
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
