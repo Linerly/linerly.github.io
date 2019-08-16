@@ -1,3 +1,5 @@
+/* This is the .css file for the custom scroll bar. This custom scroll bar is not supported in Mozzila Firefox, Internet Explorer, and Microsoft Edge. */
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -5,7 +7,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: dodgerblue; 
 }
 
 /* Handle */
