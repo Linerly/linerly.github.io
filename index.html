@@ -174,10 +174,27 @@
 
     <!--iFrame Alignment-->
         <style> 
-          iframe {
+          div {
             display: flex;
             align-items: center;
             justify-content: center;
+          }
+
+          .iframe {
+            width: 200px;
+          }
+
+          div,
+          body,
+          html {
+            height: 100%;
+            width: 100%;
+          }
+
+          body {
+            display: table;
+            height: 100%;
+            width: 100%;
           }
     </style>
     
@@ -187,7 +204,9 @@ var bannersnack_embed = {"hash":"bz9szl0lc","width":970,"height":250,"t":1595753
 </script>
 <script type="text/javascript" src="https://cdn.bannersnack.com/iframe/embed.js"></script>
     
-    <iframe src="https://ptb.discordapp.com/widget?id=527504269583187972&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+ <div>
+  <iframe src="https://ptb.discordapp.com/widget?id=527504269583187972&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</div>
     
   </body>
 </html>
