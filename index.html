@@ -130,19 +130,6 @@
           width: 100%;
           text-align: left;
         }
-      .content {
-        padding: 16px;
-      }
-
-      .sticky {
-       position: fixed;
-       top: 0;
-       width: 100%;
-      }
-
-      .sticky + .content {
-        padding-top: 60px;
-      }
       </style>
   </head>
   
@@ -178,36 +165,33 @@
           x.className = "topnav";
         }
       }
-      
-      window.onscroll = function() {stickyNavbar()};
-
-      var navbar = document.getElementById("myTopnav");
-      var sticky = navbar.offsetTop;
-
-      function stickyNavbar() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
       </script>
 
     <!--Page Content-->
       <p style="text-align: center; font-size: 128px;"><strong>Linerly</strong></p>
       <p style="text-align: center; font-size: 32px;">Welcome to my website!</p>
+    
+    <hr>
 
-    <!--iFrame Alignment-->
+    <!--iFrame Alignment and <hr> styling-->
         <style> 
           iframe {
               display: block;
               margin: 0 auto;
               border: 0;
           }
+          hr {
+              border: 3px solid lightblue;
+              border-radius: 2px;
+          }
         </style>
     
 <!------------------------   Linerly's New Website Banner 2-970x250   ------------------------>
 <iframe src="//cdn.bannersnack.com/banners/bz9szl0lc/embed/index.html?userId=39265002&t=1595753098" width="970" height="250" scrolling="no" frameborder="0" allowtransparency="true" allow="autoplay" allowfullscreen="true"></iframe>
+    
+    <hr>
+    
+    <p style="text-align: center; font-size: 32px;">Join my Discord server!</p>
     
  <div>
   <iframe src="https://ptb.discordapp.com/widget?id=527504269583187972&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
