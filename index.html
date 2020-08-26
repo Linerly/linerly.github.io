@@ -170,7 +170,7 @@
  
     <!--Navbar JavaScript-->
     <script>
-      function myFunction() {
+      function myNavbar() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
           x.className += " responsive";
@@ -179,12 +179,12 @@
         }
       }
       
-      window.onscroll = function() {myFunction()};
+      window.onscroll = function() {stickyNavbar()};
 
-      var navbar = document.getElementById("navbar");
+      var navbar = document.getElementById("myTopnav");
       var sticky = navbar.offsetTop;
 
-      function myFunction() {
+      function stickyNavbar() {
         if (window.pageYOffset >= sticky) {
           navbar.classList.add("sticky")
         } else {
@@ -207,10 +207,7 @@
         </style>
     
 <!------------------------   Linerly's New Website Banner 2-970x250   ------------------------>
-<script type="text/javascript">
-var bannersnack_embed = {"hash":"bz9szl0lc","width":970,"height":250,"t":1595753098,"userId":39265002,"type":"html5"};
-</script>
-<script type="text/javascript" src="https://cdn.bannersnack.com/iframe/embed.js"></script>
+<iframe src="//cdn.bannersnack.com/banners/bz9szl0lc/embed/index.html?userId=39265002&t=1595753098" width="970" height="250" scrolling="no" frameborder="0" allowtransparency="true" allow="autoplay" allowfullscreen="true"></iframe>
     
  <div>
   <iframe src="https://ptb.discordapp.com/widget?id=527504269583187972&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
