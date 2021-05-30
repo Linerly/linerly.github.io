@@ -8,6 +8,21 @@
     <meta name="author" content="Linerly">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1E90FF">
+    
+    <!--Register service worker-->
+    <script>
+	    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js')
+          .then(function() {
+            console.log("Service worker has been registered!");
+          });
+	      });
+      }
+    </script>
+
+    <!-- Web manifest -->
+    <link rel="manifest" href="/manifest.json">
 
     <!--Favicon-->
     <link rel="icon" href="https://linerly.github.io/assets/favicon.ico" type="image/x-icon">
