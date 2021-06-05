@@ -102,6 +102,9 @@
       .dropdown {
         float: left;
         overflow: hidden;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
       }
       
       .dropdown .dropbtn {
@@ -158,7 +161,7 @@
       }
       
       @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
+        .topnav.responsive {position: -webkit-sticky; position: sticky; top: 0;}
         .topnav.responsive .icon {
           position: absolute;
           right: 0;
