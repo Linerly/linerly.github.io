@@ -1,6 +1,6 @@
 /* WebKit-based browsers */
 ::-webkit-scrollbar {
-background: transparent;
+	background: transparent;
 	overflow: visible;
 	width: 17px;
 }
@@ -8,7 +8,7 @@ background: transparent;
 ::-webkit-scrollbar-thumb {
 	background-color: rgba(0, 0, 0, 0.2);
 	border: solid #fff;
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -35,7 +35,7 @@ background: transparent;
 
 ::-webkit-scrollbar-thumb {
 	background-color: #ADADAD;
-	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.10), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -46,4 +46,4 @@ background: transparent;
 .scroller {
 	overflow-y: scroll;
 	scrollbar-color: #ADADAD #fff;
-  }
+}

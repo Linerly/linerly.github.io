@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--Metadata-->
-    <meta charset="UTF-8">
-    <meta name="description" content="This website is a website made by Linerly to show the things that I've made.">
-    <meta name="keywords" content="Linerly, Website, Blog, Personal">
-    <meta name="author" content="Linerly">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1E90FF">
-    
-    <!--Register service worker-->
-    <script>
-	    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/service-worker.js')
-          .then(function() {
+
+<head>
+  <!--Metadata-->
+  <meta charset="UTF-8">
+  <meta name="description" content="This website is a website made by Linerly to show the things that I've made.">
+  <meta name="keywords" content="Linerly, Website, Blog, Personal">
+  <meta name="author" content="Linerly">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1E90FF">
+
+  <!--Register service worker-->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(function () {
             console.log("Service worker has been registered!");
           });
-	      });
-      }
-    </script>
+      });
+    }
+  </script>
 
-    <!-- Web manifest -->
-    <link rel="manifest" href="/manifest.json">
+  <!-- Web manifest -->
+  <link rel="manifest" href="/manifest.json">
 
-    <!--Favicon-->
-    <link rel="icon" href="https://linerly.github.io/assets/favicon.ico" type="image/x-icon">
-    
-    <!--Page Title-->
-    <title>Home - Linerly</title>
-    
-    <!--Some custom icons for navbar-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!--Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Quicksand', sans-serif;
-      }
-    </style>
+  <!--Favicon-->
+  <link rel="icon" href="https://linerly.github.io/assets/favicon.ico" type="image/x-icon">
 
-   <!--Message for showing if JS is disabled-->
-   <noscript>
+  <!--Page Title-->
+  <title>Home - Linerly</title>
+
+  <!--Some custom icons for navbar-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+  </style>
+
+  <!--Message for showing if JS is disabled-->
+  <noscript>
     <style>
       figure noscript {
         top: 0;
@@ -50,207 +51,236 @@
         position: absolute;
       }
     </style>
-  
-    <style>
-        #enable-js {
-          margin: 0;
-          padding: 12px 15px;
-          background-color: #FFC107;
-          color: #000;
-          text-align: center;
-          font-family: 'Quicksand', sans-serif;
-          font-size: 13px;
-        }
-      </style>
-      <p id="enable-js">Some things can't be loaded, <a href="https://www.enable-javascript.com/" target="_blank">it is recommended to have JavaScript enabled in your web browser.</a></p>
-    </noscript>
 
-    <!--Navbar Styling-->
     <style>
-      body {margin:0;font-family:Quicksand}
-      
-      .topnav {
-        overflow: hidden;
-        background-color: #333;
-        -moz-box-shadow:    0 8px 6px -6px rgba(0, 0, 0, 0.315);
-        -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.315);
-        box-shadow:         0 8px 6px -6px rgba(0, 0, 0, 0.315);
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-      }
-      
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      
-      .active {
-        background-color: #1E90FF;
-        color: white;
-      }
-      
-      .topnav .icon {
-        display: none;
-      }
-      
-      .dropdown {
-        float: left;
-        overflow: hidden;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-      }
-      
-      .dropdown .dropbtn {
-        font-size: 17px;    
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
+      #enable-js {
         margin: 0;
+        padding: 12px 15px;
+        background-color: #FFC107;
+        color: #000;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 13px;
       }
-      
-      .dropdown-content {
+    </style>
+    <p id="enable-js">Some things can't be loaded, <a href="https://www.enable-javascript.com/" target="_blank">it is
+        recommended to have JavaScript enabled in your web browser.</a></p>
+  </noscript>
+
+  <!--Navbar Styling-->
+  <style>
+    body {
+      margin: 0;
+      font-family: Quicksand
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.315);
+      -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.315);
+      box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.315);
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .active {
+      background-color: #1E90FF;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #555;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .topnav a:not(:first-child),
+      .dropdown .dropbtn {
         display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
       }
-      
-      .dropdown-content a {
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
         float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
         display: block;
         text-align: left;
       }
-      
-      .topnav a:hover, .dropdown:hover .dropbtn {
-        background-color: #555;
-        color: white;
+
+      .topnav.responsive .dropdown {
+        float: none;
       }
-      
-      .dropdown-content a:hover {
-        background-color: #ddd;
-        color: black;
+
+      .topnav.responsive .dropdown-content {
+        position: relative;
       }
-      
-      .dropdown:hover .dropdown-content {
+
+      .topnav.responsive .dropdown .dropbtn {
         display: block;
+        width: 100%;
+        text-align: left;
       }
-      
-      @media screen and (max-width: 600px) {
-        .topnav a:not(:first-child), .dropdown .dropbtn {
-          display: none;
-        }
-        .topnav a.icon {
-          float: right;
-          display: block;
-        }
+  </style>
+
+  <!--Scroll Bar Styling-->
+  <link rel="stylesheet" href="https://linerly.github.io/css/scrollBar.css">
+
+  <!--Fixed background image-->
+  <style>
+    body {
+      background-image: url("https://linerly.github.io/assets/background.png");
+      background-repeat: repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Home</a>
+    <a href="blog">Blog</a>
+    <a href="linerlybot">LinerlyBot</a>
+    <a href="linerlycraft">Linerlycraft</a>
+    <a href="creations">Creations</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavbar()">&#9776;</a>
+  </div>
+
+  <!--Navbar JavaScript-->
+  <script>
+    function myNavbar() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-      
-      @media screen and (max-width: 600px) {
-        .topnav.responsive {position: -webkit-sticky; position: sticky; top: 0;}
-        .topnav.responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .topnav.responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-        .topnav.responsive .dropdown {float: none;}
-        .topnav.responsive .dropdown-content {position: relative;}
-        .topnav.responsive .dropdown .dropbtn {
-          display: block;
-          width: 100%;
-          text-align: left;
-        }
-      </style>
+    }
+  </script>
 
-      <!--Scroll Bar Styling-->
-      <link rel="stylesheet" href="https://linerly.github.io/css/scrollBar.css">
-    
-      <!--Fixed background image-->
-      <style>  
-        body  {
-          background-image: url("https://linerly.github.io/assets/background.png");
-          background-repeat: repeat;
-          background-attachment: fixed;
-        }
-      </style>
-  </head>
-  
-  <body>
-    
-    <!--Navbar-->
-    <div class="topnav" id="myTopnav">
-      <a href="#" class="active">Home</a>
-      <a href="blog">Blog</a>
-      <a href="linerlybot">LinerlyBot</a>
-      <a href="linerlycraft">Linerlycraft</a>
-      <a href="creations">Creations</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavbar()">&#9776;</a>
-    </div>
- 
-    <!--Navbar JavaScript-->
-    <script>
-      function myNavbar() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+  <!--Page Content-->
+  <p style="text-align: center; font-size: 6em;"><strong>Linerly</strong></p>
+  <p style="text-align: center; font-size: 32px;">Welcome to my website!</p>
+  <p style="text-align: center; font-size: 18px;">This is where I share all of my things I made here.</p>
 
-    <!--Page Content-->
-      <p style="text-align: center; font-size: 6em;"><strong>Linerly</strong></p>
-      <p style="text-align: center; font-size: 32px;">Welcome to my website!</p>
-      <p style="text-align: center; font-size: 18px;">This is where I share all of my things I made here.</p>
-    
-   <hr style="width:50%;text-align:center;margin:auto;">
- 
-    <!--iFrame Alignment and <hr> styling-->
-        <style> 
-          iframe {
-              display: block;
-              margin: 0 auto;
-              border: 0;
-          }
-          hr {
-              border: 2px solid gray;
-              border-radius: 2px;
-          }
-        </style>
-  
-    <p style="text-align: center; font-size: 32px;">Join my Discord server!</p>
-    
- <div>
-  <iframe src="https://discord.com/widget?id=527504269583187972&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-</div>
+  <hr style="width:50%;text-align:center;margin:auto;">
 
-<br>
-<br>
-  
-    <hr style="width:50%;text-align:center;margin:auto;">
-    
-    <p style="text-align: center; font-size: 16px;">Check out my other project I'm working on, <a href="https://mediaplay-discord.github.io/" target="_blank">the MediaPlay Discord website!</a></p>
+  <!--iFrame Alignment and <hr> styling-->
+  <style>
+    iframe {
+      display: block;
+      margin: 0 auto;
+      border: 0;
+    }
 
-    <p style="text-align: center; font-size: 14px;"><a href="social-media" target="_blank">Social Media</a> | <a href="https://github.com/Linerly/linerly.github.io/" target="_blank">Source Code</a> | <a href="https://stats.uptimerobot.com/x7OLMFJgQP"  target="_blank">Status</a> | <a href="https://linerly.github.io/notes" target="_blank">Notes</a></p>
-  </body>
+    hr {
+      border: 2px solid gray;
+      border-radius: 2px;
+    }
+  </style>
+
+  <p style="text-align: center; font-size: 32px;">Join my Discord server!</p>
+
+  <div>
+    <iframe src="https://discord.com/widget?id=527504269583187972&theme=dark" width="350" height="500"
+      allowtransparency="true" frameborder="0"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  </div>
+
+  <br>
+  <br>
+
+  <hr style="width:50%;text-align:center;margin:auto;">
+
+  <p style="text-align: center; font-size: 16px;">Check out my other project I'm working on, <a
+      href="https://mediaplay-discord.github.io/" target="_blank">the MediaPlay Discord website!</a></p>
+
+  <p style="text-align: center; font-size: 14px;"><a href="social-media" target="_blank">Social Media</a> | <a
+      href="https://github.com/Linerly/linerly.github.io/" target="_blank">Source Code</a> | <a
+      href="https://stats.uptimerobot.com/x7OLMFJgQP" target="_blank">Status</a> | <a
+      href="https://linerly.github.io/notes" target="_blank">Notes</a></p>
+</body>
+
 </html>
