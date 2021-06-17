@@ -1,27 +1,10 @@
 :root {
-    --warning-color: #ffc107;
     --theme-color: #1e90ff;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 /* CSS styling for the <noscript> message. */
-figure noscript {
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-#enable-js {
-    margin: 0;
-    padding: 12px 15px;
-    background-color: var(--warning-color);
-
-    color: #000;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-}
 
 /* CSS styling for the main things in the website. */
 body {

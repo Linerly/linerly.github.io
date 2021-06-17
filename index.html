@@ -27,7 +27,26 @@
   <![endif]-->
 
   <noscript>
-    <p id="enable-js">Some things can't be loaded, <a href="https://www.enable-javascript.com/" target="_blank">it is recommended to have JavaScript enabled in your web browser.</a></p>
+    <style>
+      figure noscript {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+
+      #enable-js {
+        margin: 0;
+        padding: 12px 15px;
+        background-color: #ffc107;
+
+        color: #000;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 13px;
+      }
+    </style>
+
+    <p id="enable-js"><a href="https://www.enable-javascript.com/" target="_blank">Consider enabling JavaScript in your browser!</a></p>
   </noscript>
 
   <script defer>
@@ -73,7 +92,7 @@
   <p style="font-size: 32px;">Join my Discord server!</p>
 
   <div>
-    <iframe src="https://discord.com/widget?id=527504269583187972&theme=dark" width="350" height="500"
+    <iframe title="Discord server widget" src="https://discord.com/widget?id=527504269583187972&theme=dark" width="350" height="500"
       allowtransparency="true" frameborder="0"
       sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
   </div>

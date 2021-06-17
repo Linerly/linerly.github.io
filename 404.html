@@ -26,8 +26,27 @@
     <p class="browsehappy">It looks like that you're using an <strong>outdated</strong> browser. Consider <a href="#">upgrading your browser</a>!</p>
   <![endif]-->
 
-  <noscript>
-    <p id="enable-js">Some things can't be loaded, <a href="https://www.enable-javascript.com/" target="_blank">it is recommended to have JavaScript enabled in your web browser.</a></p>
+  <<noscript>
+    <style>
+      figure noscript {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+
+      #enable-js {
+        margin: 0;
+        padding: 12px 15px;
+        background-color: #ffc107;
+
+        color: #000;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 13px;
+      }
+    </style>
+
+    <p id="enable-js"><a href="https://www.enable-javascript.com/" target="_blank">Consider enabling JavaScript in your browser!</a></p>
   </noscript>
 
   <!--Navbar-->
