@@ -40,7 +40,7 @@ if (!self.define) {
         })))
     }
 }
-define("./service-worker.js", ["./workbox-4d718be7"], (function (s) {
+define("./service-worker.js", ["./workbox/workbox-4d718be7"], (function (s) {
     "use strict";
     self.addEventListener("message", (s => {
         s.data && "SKIP_WAITING" === s.data.type && self.skipWaiting()
