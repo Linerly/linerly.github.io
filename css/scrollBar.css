@@ -1,3 +1,5 @@
+/* CSS styling for scroll bars. */
+
 /* WebKit-based browsers */
 ::-webkit-scrollbar {
 	background: transparent;

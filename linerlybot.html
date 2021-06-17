@@ -1,239 +1,85 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-  <head>
-    <!--Metadata-->
-    <meta charset="UTF-8">
-    <meta name="description" content="LinerlyBot is a bot made and maintained by Linerly.">
-    <meta name="keywords" content="Linerly, LinerlyBot, Discord, Bot, Python, discord.py, Py, Programming, Coding">
-    <meta name="author" content="Linerly">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1E90FF">
 
-    <!--Favicon-->
-    <link rel="icon" href="https://linerly.github.io/assets/favicon.ico" type="image/x-icon">
-    
-    <!--Page Title-->
-    <title>LinerlyBot - Linerly</title>
-    
-    <!--Some custom icons for navbar-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!--Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Quicksand', sans-serif;
-      }
-    </style>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LinerlyBot - Linerly</title>
+  <meta name="description" content="LinerlyBot is a bot made and maintained by Linerly.">
+  <meta name="keywords" content="Linerly, LinerlyBot, Discord, Bot, Python, discord.py, Py, Programming, Coding">
+  <meta name="author" content="Linerly">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e90ff">
+  <link rel="icon" href="https://linerly.github.io/assets/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/scrollBar.css">
+</head>
 
-   <!--Message for showing if JS is disabled-->
-   <noscript>
-    <style>
-      figure noscript {
-        top: 0;
-        left: 0;
-        position: absolute;
+<body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">It looks like that you're using an <strong>outdated</strong> browser. Consider <a href="#">upgrading your browser</a>!</p>
+  <![endif]-->
+
+  <noscript>
+    <p id="enable-js">Some things can't be loaded, <a href="https://www.enable-javascript.com/" target="_blank">it is recommended to have JavaScript enabled in your web browser.</a></p>
+  </noscript>
+
+  <!--Navbar-->
+  <div class="topnav" id="myTopnav">
+    <a href="/">Home</a>
+    <a href="blog">Blog</a>
+    <a href="linerlybot" class="active">LinerlyBot</a>
+    <a href="linerlycraft">Linerlycraft</a>
+    <a href="creations">Creations</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavbar()">&#9776;</a>
+  </div>
+
+  <!--Navbar JavaScript-->
+  <script>
+    function myNavbar() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-    </style>
+    }
+  </script>
+
+  <!--Main content-->
   
-    <style>
-        #enable-js {
-          margin: 0;
-          padding: 12px 15px;
-          background-color: #FFC107;
-          color: #000;
-          text-align: center;
-          font-family: 'Quicksand', sans-serif;
-          font-size: 13px;
-        }
-      </style>
-      <p id="enable-js">Some things can't be loaded, <a href="https://www.enable-javascript.com/" target="_blank">it is recommended to have JavaScript enabled in your web browser.</a></p>
-    </noscript>
+  <img src="./assets/linerlybot/linerlybot.png" width="128" height="128" style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%;"></img>
+  <p style="text-align: center; font-size: 4.5em;"><strong>LinerlyBot</strong></p>
 
-    <!--Navbar Styling-->
-    <style>
-      body {margin:0;font-family:Quicksand}
-      
-      .topnav {
-        overflow: hidden;
-        background-color: #333;
-        -moz-box-shadow:    0 8px 6px -6px rgba(0, 0, 0, 0.315);
-        -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.315);
-        box-shadow:         0 8px 6px -6px rgba(0, 0, 0, 0.315);
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-      }
-      
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      
-      .active {
-        background-color: #1E90FF;
-        color: white;
-      }
-      
-      .topnav .icon {
-        display: none;
-      }
-      
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-      
-      .dropdown .dropbtn {
-        font-size: 17px;    
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-      
-      .topnav a:hover, .dropdown:hover .dropbtn {
-        background-color: #555;
-        color: white;
-      }
-      
-      .dropdown-content a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      
-      @media screen and (max-width: 600px) {
-        .topnav a:not(:first-child), .dropdown .dropbtn {
-          display: none;
-        }
-        .topnav a.icon {
-          float: right;
-          display: block;
-        }
-      }
-      
-      @media screen and (max-width: 600px) {
-        .topnav.responsive {position: -webkit-sticky; position: sticky; top: 0;}
-        .topnav.responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .topnav.responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-        .topnav.responsive .dropdown {float: none;}
-        .topnav.responsive .dropdown-content {position: relative;}
-        .topnav.responsive .dropdown .dropbtn {
-          display: block;
-          width: 100%;
-          text-align: left;
-        }
-      </style>
-    
-    <!--Scroll Bar Styling-->
-      <link rel="stylesheet" href="https://linerly.github.io/css/scrollBar.css">
-    
-    <!--Fixed background image-->
-      <style>  
-        body  {
-          background-image: url("https://linerly.github.io/assets/background.png");
-          background-repeat: repeat;
-          background-attachment: fixed;
-        }
-      </style>
-  </head>
-  
-  <body>
-    
-    <!--Navbar-->
-    <div class="topnav" id="myTopnav">
-      <a href="https://linerly.github.io/">Home</a>
-      <a href="https://linerly.github.io/blog">Blog</a>
-      <a href="https://linerly.github.io/linerlybot" class="active">LinerlyBot</a>
-      <a href="https://linerly.github.io/linerlycraft">Linerlycraft</a>
-      <a href="https://linerly.github.io/creations">Creations</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavbar()">&#9776;</a>
-    </div>
+  <p style="text-align: center; font-size: 24px;">LinerlyBot is a Discord bot created and maintained by Linerly.</p>
+
+  <hr>
  
-    <!--Navbar JavaScript-->
-    <script>
-      function myNavbar() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+  <p style="text-align: center; font-size: 24px;">Invite LinerlyBot to your server by clicking <a href="https://discord.com/oauth2/authorize?client_id=529566778293223434&scope=bot&permissions=18432">here</a>!</p>
 
-    <!--Page Content-->
-      <p style="text-align: center; font-size: 4.5em;"><strong>LinerlyBot</strong></p>
-      <img src="./assets/linerlybot/linerlybot.png" width="128" height="128" style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%;"></img>
-      <p style="text-align: center; font-size: 24px;">LinerlyBot is a Discord bot created and maintained by Linerly.</p>
-   <hr style="width:50%;text-align:center;margin:auto;">
- 
-    <!--iFrame Alignment and <hr> styling-->
-        <style> 
-          iframe {
-              display: block;
-              margin: 0 auto;
-              border: 0;
-          }
-          hr {
-              border: 2px solid gray;
-              border-radius: 2px;
-          }
-        </style>
-       
-    <p style="text-align: center; font-size: 24px;">Invite LinerlyBot to your server by clicking <a href="https://discord.com/oauth2/authorize?client_id=529566778293223434&scope=bot&permissions=18432">here</a>!</p>
-
-    <hr style="width:50%;text-align:center;margin:auto;">
-
-    <p style="text-align: center; font-size: 32px;">Join the LinerlyBot support server!</p>
-    <div>
-        <iframe src="https://discord.com/widget?id=551683447026876418&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div>
+  <p style="text-align: center; font-size: 32px;">Join the LinerlyBot support server!</p>
+  <div>
+      <iframe src="https://discord.com/widget?id=551683447026876418&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  </div>
     
-    <br>
-    <br>
+  <br>
+  <br>
 
-    <hr style="width:50%;text-align:center;margin:auto;">
+  <hr>
     
-    <p style="text-align: center; font-size: 16px;">LinerlyBot now uses discord.py!</p>
-    
-  </body>
+  <p style="text-align: center; font-size: 16px;">LinerlyBot now uses discord.py!</p>  
+
+  <p style="text-align: center; font-size: 14px;"><a href="social-media" target="_blank">Social Media</a> | <a
+    href="https://github.com/Linerly/linerly.github.io/" target="_blank">Source Code</a> | <a
+    href="https://stats.uptimerobot.com/x7OLMFJgQP" target="_blank">Status</a> | <a
+    href="https://linerly.github.io/notes" target="_blank">Notes</a></p>
+
+</body>
+
 </html>

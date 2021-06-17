@@ -8,9 +8,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Notes - Linerly</title>
-  <meta name="description" content="Some additional notes about the website.">
-  <meta name="keywords" content="Linerly, Website, Blog, Personal, Notes, PS, P.S., Exception">
+  <title>Template - Linerly</title>
+  <meta name="description" content="Insert description here.">
+  <meta name="keywords" content="Linerly">
   <meta name="author" content="Linerly">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1e90ff">
@@ -32,7 +32,7 @@
 
   <!--Navbar-->
   <div class="topnav" id="myTopnav">
-    <a href="/">Home</a>
+    <a href="/" class="active">Home</a>
     <a href="blog">Blog</a>
     <a href="linerlybot">LinerlyBot</a>
     <a href="linerlycraft">Linerlycraft</a>
@@ -53,19 +53,8 @@
   </script>
 
   <!--Main content-->
-  <strong><p style="text-align: center; font-size: 5em;">Notes</p></strong>
+  
 
-  <p style="font-size: 1.5em;">I have rewritten every HTML pages in this repository <br> just to make it neater, and I also have a working blog now!</p>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
   <p style="text-align: center; font-size: 14px;"><a href="social-media" target="_blank">Social Media</a> | <a
     href="https://github.com/Linerly/linerly.github.io/" target="_blank">Source Code</a> | <a
