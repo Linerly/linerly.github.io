@@ -14,11 +14,11 @@
   <meta name="author" content="Linerly">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1e90ff">
-  <link rel="icon" href="https://linerly.github.io/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="./css/scrollBar.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/scrollBar.css">
 </head>
 
 <body>
@@ -46,15 +46,16 @@
       }
     </style>
 
-    <p id="enable-js"><a href="https://www.enable-javascript.com/" target="_blank">Consider enabling JavaScript in your browser!</a></p>
+    <p id="enable-js"><a href="https://www.enable-javascript.com/" target="_blank">Consider enabling JavaScript in your
+        browser!</a></p>
   </noscript>
   <!--Navbar-->
   <div class="topnav" id="myTopnav">
     <a href="/" class="active">Home</a>
-    <a href="blog">Blog</a>
-    <a href="linerlybot">LinerlyBot</a>
-    <a href="linerlycraft">Linerlycraft</a>
-    <a href="creations">Creations</a>
+    <a href="/blog">Blog</a>
+    <a href="/linerlybot">LinerlyBot</a>
+    <a href="/linerlycraft">Linerlycraft</a>
+    <a href="/creations">Creations</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavbar()">&#9776;</a>
   </div>
 
@@ -71,13 +72,13 @@
   </script>
 
   <!--Main content-->
-  
 
 
-  <p style="text-align: center; font-size: 14px;"><a href="social-media" target="_blank">Social Media</a> | <a
-    href="https://github.com/Linerly/linerly.github.io/" target="_blank">Source Code</a> | <a
-    href="https://stats.uptimerobot.com/x7OLMFJgQP" target="_blank">Status</a> | <a
-    href="https://linerly.github.io/notes" target="_blank">Notes</a></p>
+
+  <p style="text-align: center; font-size: 14px;"><a href="/social-media" target="_blank">Social Media</a> | <a
+      href="https://github.com/Linerly/linerly.github.io/" target="_blank">Source Code</a> | <a
+      href="/status" target="_blank">Status</a> | <a
+      href="/notes" target="_blank">Notes</a></p>
 
 </body>
 
