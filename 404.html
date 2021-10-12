@@ -4,86 +4,105 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>404 - Linerly</title>
+    <meta name="description" content="Huh, seems to be nothing in here..." />
+    <meta name="keywords" content="404" />
+    <meta name="author" content="Linerly" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e90ff" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/scrollBar.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>404 - Linerly</title>
-  <meta name="description" content="Huh, seems to be nothing in here...">
-  <meta name="keywords" content="404">
-  <meta name="author" content="Linerly">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1e90ff">
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/navbar.css">
-  <link rel="stylesheet" href="/css/scrollBar.css">
-</head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        It looks like that you're using an <strong>outdated</strong> browser.
+        Consider <a href="#">upgrading your browser</a>!
+      </p>
+    <![endif]-->
 
-<body>
-  <!--[if lt IE 7]>
-    <p class="browsehappy">It looks like that you're using an <strong>outdated</strong> browser. Consider <a href="#">upgrading your browser</a>!</p>
-  <![endif]-->
+    <noscript>
+      <style>
+        figure noscript {
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
 
-  <noscript>
-    <style>
-      figure noscript {
-        top: 0;
-        left: 0;
-        position: absolute;
+        #enable-js {
+          margin: 0;
+          padding: 12px 15px;
+          background-color: #ffc107;
+
+          color: #000;
+          text-align: center;
+          font-family: "Quicksand", sans-serif;
+          font-size: 13px;
+        }
+      </style>
+
+      <p id="enable-js">
+        <a href="https://www.enable-javascript.com/" target="_blank"
+          >Consider enabling JavaScript in your browser!</a
+        >
+      </p>
+    </noscript>
+
+    <!--Navbar-->
+    <div class="topnav" id="myTopnav">
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/linerlybot">LinerlyBot</a>
+      <a href="/linerlycraft">Linerlycraft</a>
+      <a href="/creations">Creations</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myNavbar()"
+        >&#9776;</a
+      >
+    </div>
+
+    <!--Navbar JavaScript-->
+    <script>
+      function myNavbar() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
+    </script>
 
-      #enable-js {
-        margin: 0;
-        padding: 12px 15px;
-        background-color: #ffc107;
+    <!--Main content-->
+    <p style="font-size: 8.25em"><strong>404</strong></p>
+    <p style="font-size: 1.75em">
+      This page might not exist, removed, or moved somewhere else.
+    </p>
 
-        color: #000;
-        text-align: center;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 13px;
-      }
-    </style>
+    <p style="font-size: 1.25em">
+      Click <a href="/" target="_self" rel="noopener">here</a> to go back to
+      home.
+    </p>
 
-    <p id="enable-js"><a href="https://www.enable-javascript.com/" target="_blank">Consider enabling JavaScript in your
-        browser!</a></p>
-  </noscript>
+    <br />
 
-  <!--Navbar-->
-  <div class="topnav" id="myTopnav">
-    <a href="/">Home</a>
-    <a href="/blog">Blog</a>
-    <a href="/linerlybot">LinerlyBot</a>
-    <a href="/linerlycraft">Linerlycraft</a>
-    <a href="/creations">Creations</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavbar()">&#9776;</a>
-  </div>
-
-  <!--Navbar JavaScript-->
-  <script>
-    function myNavbar() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
-
-  <!--Main content-->
-  <p style="font-size: 8.25em;"><strong>404</strong></p>
-  <p style="font-size: 1.75em;">This page might not exist, removed, or moved somewhere else.</p>
-
-  <p style="font-size: 1.25em;">Click <a href="/" target="_self" rel="noopener">here</a> to go back to home.</p>
-
-  <br>
-
-  <p style="text-align: center; font-size: 14px;"><a href="/social-media" target="_blank">Social Media</a> | <a
-      href="https://github.com/Linerly/linerly.github.io/" target="_blank">Source Code</a> | <a href="/status"
-      target="_blank">Status</a> | <a href="/notes" target="_blank">Notes</a></p>
-
-</body>
-
+    <p style="text-align: center; font-size: 14px">
+      <a href="/social-media" target="_blank">Social Media</a> |
+      <a href="https://github.com/Linerly/linerly.github.io/" target="_blank"
+        >Source Code</a
+      >
+      | <a href="/status" target="_blank">Status</a> |
+      <a href="/notes" target="_blank">Notes</a>
+    </p>
+  </body>
 </html>

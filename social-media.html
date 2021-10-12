@@ -4,156 +4,198 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Social Media - Linerly</title>
+    <meta name="description" content="Find me in other platforms." />
+    <meta
+      name="keywords"
+      content="Linerly, Website, Social Media, Sites, Links, Connections"
+    />
+    <meta name="author" content="Linerly" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e90ff" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/scrollBar.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Social Media - Linerly</title>
-  <meta name="description" content="Find me in other platforms.">
-  <meta name="keywords" content="Linerly, Website, Social Media, Sites, Links, Connections">
-  <meta name="author" content="Linerly">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1e90ff">
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/navbar.css">
-  <link rel="stylesheet" href="/css/scrollBar.css">
-</head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        It looks like that you're using an <strong>outdated</strong> browser.
+        Consider <a href="#">upgrading your browser</a>!
+      </p>
+    <![endif]-->
 
-<body>
-  <!--[if lt IE 7]>
-    <p class="browsehappy">It looks like that you're using an <strong>outdated</strong> browser. Consider <a href="#">upgrading your browser</a>!</p>
-  <![endif]-->
+    <noscript>
+      <style>
+        figure noscript {
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
 
-  <noscript>
+        #enable-js {
+          margin: 0;
+          padding: 12px 15px;
+          background-color: #ffc107;
+
+          color: #000;
+          text-align: center;
+          font-family: "Quicksand", sans-serif;
+          font-size: 13px;
+        }
+      </style>
+
+      <p id="enable-js">
+        <a href="https://www.enable-javascript.com/" target="_blank"
+          >Consider enabling JavaScript in your browser!</a
+        >
+      </p>
+    </noscript>
+
+    <!--Navbar-->
+    <div class="topnav" id="myTopnav">
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/linerlybot">LinerlyBot</a>
+      <a href="/linerlycraft">Linerlycraft</a>
+      <a href="/creations">Creations</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myNavbar()"
+        >&#9776;</a
+      >
+    </div>
+
+    <!--Navbar JavaScript-->
+    <script>
+      function myNavbar() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!--Main content-->
     <style>
-      figure noscript {
-        top: 0;
-        left: 0;
-        position: absolute;
+      .grid-container {
+        display: grid;
+        grid-template-columns: 128px 128px 128px;
+        justify-content: center;
       }
 
-      #enable-js {
-        margin: 0;
-        padding: 12px 15px;
-        background-color: #ffc107;
-
-        color: #000;
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
         text-align: center;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 13px;
       }
     </style>
 
-    <p id="enable-js"><a href="https://www.enable-javascript.com/" target="_blank">Consider enabling JavaScript in your
-        browser!</a></p>
-  </noscript>
+    <p style="font-size: 24px">Find me on other platforms!</p>
 
-  <!--Navbar-->
-  <div class="topnav" id="myTopnav">
-    <a href="/">Home</a>
-    <a href="/blog">Blog</a>
-    <a href="/linerlybot">LinerlyBot</a>
-    <a href="/linerlycraft">Linerlycraft</a>
-    <a href="/creations">Creations</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavbar()">&#9776;</a>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <p style="text-align: center">
+          <a href="https://bit.ly/linerly_deviantart" target="_blank"
+            ><i class="fa fa-deviantart"></i
+          ></a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center; font-size: 16px">
+          <a href="https://bit.ly/linerly_discord" target="_blank">Discord</a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center">
+          <a href="https://bit.ly/linerly_github" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center; font-size: 16px">
+          <a href="https://bit.ly/linerly_itch" target="_blank">itch.io</a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center; font-size: 16px">
+          <a href="https://bit.ly/linerly_keybase" target="_blank">Keybase</a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center; font-size: 16px">
+          <a href="https://bit.ly/linerly_osu" target="_blank">osu!</a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center">
+          <a href="https://bit.ly/linerly_paypal" target="_blank"
+            ><i class="fa fa-paypal"></i
+          ></a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center">
+          <a href="https://bit.ly/linerly_reddit" target="_blank"
+            ><i class="fa fa-reddit-alien"></i
+          ></a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center; font-size: 16px">
+          <a href="https://bit.ly/linerly_roblox" target="_blank">Roblox</a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center; font-size: 16px">
+          <a href="https://bit.ly/linerly_scratch" target="_blank">Scratch</a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center; font-size: 16px">
+          <a href="https://bit.ly/linerly_sheepit" target="_blank">SheepIt</a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center">
+          <a href="https://bit.ly/linerly_steam" target="_blank"
+            ><i class="fa fa-steam"></i
+          ></a>
+        </p>
+      </div>
+      <div class="grid-item">
+        <p style="text-align: center">
+          <a href="https://bit.ly/linerly_youtube" target="_blank"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+        </p>
+      </div>
+    </div>
 
-  <!--Navbar JavaScript-->
-  <script>
-    function myNavbar() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
+    <br />
 
-  <!--Main content-->
-  <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: 128px 128px 128px;
-      justify-content: center;
-    }
+    <p>I'll try to improve this page sometime soon.</p>
 
-    .grid-item {
-      background-color: rgba(255, 255, 255, 0.8);
-      border: 1px solid rgba(0, 0, 0, 0.8);
-      padding: 20px;
-      font-size: 30px;
-      text-align: center;
-    }
-  </style>
-
-  <p style="font-size: 24px;">Find me on other platforms!</p>
-
-  <div class="grid-container">
-    <div class="grid-item">
-      <p style="text-align: center;"><a href="https://bit.ly/linerly_deviantart" target="_blank"><i
-            class="fa fa-deviantart"></i></a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center; font-size: 16px;"><a href="https://bit.ly/linerly_discord"
-          target="_blank">Discord</a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center;"><a href="https://bit.ly/linerly_github" target="_blank"><i
-            class="fa fa-github"></i></a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center; font-size: 16px;"><a href="https://bit.ly/linerly_itch" target="_blank">itch.io</a>
-      </p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center; font-size: 16px;"><a href="https://bit.ly/linerly_keybase"
-          target="_blank">Keybase</a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center; font-size: 16px;"><a href="https://bit.ly/linerly_osu" target="_blank">osu!</a>
-      </p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center;"><a href="https://bit.ly/linerly_paypal" target="_blank"><i
-            class="fa fa-paypal"></i></a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center;"><a href="https://bit.ly/linerly_reddit" target="_blank"><i
-            class="fa fa-reddit-alien"></i></a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center; font-size: 16px;"><a href="https://bit.ly/linerly_roblox" target="_blank">Roblox</a>
-      </p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center; font-size: 16px;"><a href="https://bit.ly/linerly_scratch"
-          target="_blank">Scratch</a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center; font-size: 16px;"><a href="https://bit.ly/linerly_sheepit"
-          target="_blank">SheepIt</a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center;"><a href="https://bit.ly/linerly_steam" target="_blank"><i
-            class="fa fa-steam"></i></a></p>
-    </div>
-    <div class="grid-item">
-      <p style="text-align: center;"><a href="https://bit.ly/linerly_youtube" target="_blank"><i
-            class="fa fa-youtube-play"></i></a></p>
-    </div>
-  </div>
-
-  <br>
-
-  <p>I'll try to improve this page sometime soon.</p>
-
-  <p><a href="#" target="_blank">Social Media</a> | <a href="https://github.com/Linerly/linerly.github.io/"
-      target="_blank">Source Code</a> | <a href="/status" target="_blank">Status</a> | <a href="/notes"
-      target="_blank">Notes</a></p>
-
-</body>
-
+    <p>
+      <a href="#" target="_blank">Social Media</a> |
+      <a href="https://github.com/Linerly/linerly.github.io/" target="_blank"
+        >Source Code</a
+      >
+      | <a href="/status" target="_blank">Status</a> |
+      <a href="/notes" target="_blank">Notes</a>
+    </p>
+  </body>
 </html>
