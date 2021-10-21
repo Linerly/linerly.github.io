@@ -61,11 +61,9 @@
     <script defer>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
-          navigator.serviceWorker
-            .register("/sw.js")
-            .then(function () {
-              console.log("The service worker has been registered!");
-            });
+          navigator.serviceWorker.register("/sw.js").then(function () {
+            console.log("The service worker has been registered!");
+          });
         });
       }
     </script>
@@ -112,8 +110,8 @@
 
     <p style="text-align: center; font-size: 16px">
       Check out my other project I'm working on,
-      <a href="https://mediaplay-discord.github.io/" target="_blank"
-        >the MediaPlay Discord website!</a
+      <a href="https://github.com/Linerly/linerlybot-matrix" target="_blank"
+        >LinerlyBot Matrix!</a
       >
     </p>
 

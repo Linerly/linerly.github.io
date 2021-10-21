@@ -2,14 +2,21 @@
     --theme-color: #1e90ff;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-
-/* CSS styling for the <noscript> message. */
-
 /* CSS styling for the main things in the website. */
+
+/* quicksand-regular - latin */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('/assets/fonts/quicksand-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/assets/fonts/quicksand-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  
+
 body {
     margin: auto;
-    font-family: 'Quicksand', sans-serif;
 
     background: rgb(15,48,78);
     background: -moz-linear-gradient(45deg, rgba(15,48,78,1) 0%, rgba(0,74,153,1) 100%);
