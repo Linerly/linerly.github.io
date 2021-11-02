@@ -4,132 +4,173 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Home - Linerly</title>
-    <meta
-      name="description"
-      content="This website is a website made by Linerly to show the things that I've made."
-    />
-    <meta name="keywords" content="Linerly, Website, Blog, Personal" />
-    <meta name="author" content="Linerly" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#1e90ff" />
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/scrollBar.css" />
-  </head>
 
-  <body>
-    <!--[if lt IE 7]>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Home - Linerly</title>
+  <meta name="description" content="This website is a website made by Linerly to show the things that I've made." />
+  <meta name="keywords" content="Linerly, Website, Blog, Personal" />
+  <meta name="author" content="Linerly" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1e90ff" />
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/scrollBar.css" />
+</head>
+
+<body>
+  <!--[if lt IE 7]>
       <p class="browsehappy">
         It looks like that you're using an <strong>outdated</strong> browser.
         Consider <a href="#">upgrading your browser</a>!
       </p>
     <![endif]-->
 
-    <noscript>
-      <style>
-        figure noscript {
-          top: 0;
-          left: 0;
-          position: absolute;
-        }
+  <noscript>
+    <style>
+      figure noscript {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
 
-        #enable-js {
-          margin: 0;
-          padding: 12px 15px;
-          background-color: #ffc107;
+      #enable-js {
+        margin: 0;
+        padding: 12px 15px;
+        background-color: #ffc107;
 
-          color: #000;
-          text-align: center;
-          font-family: "Quicksand", sans-serif;
-          font-size: 13px;
-        }
-      </style>
+        color: #000;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-size: 13px;
+      }
+    </style>
 
-      <p id="enable-js">
-        <a href="https://www.enable-javascript.com/" target="_blank"
-          >Consider enabling JavaScript in your browser!</a
-        >
-      </p>
-    </noscript>
+    <p id="enable-js">
+      <a href="https://www.enable-javascript.com/" target="_blank">Consider enabling JavaScript in your browser!</a>
+    </p>
+  </noscript>
 
-    <script defer>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("/sw.js").then(function () {
-            console.log("The service worker has been registered!");
-          });
+  <script defer>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/sw.js").then(function () {
+          console.log("The service worker has been registered!");
         });
+      });
+    }
+  </script>
+
+  <!--Navbar-->
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/linerlybot">LinerlyBot</a>
+    <a href="/linerlycraft">Linerlycraft</a>
+    <a href="/creations">Creations</a>
+    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="myNavbar()">&#9776;</a>
+  </div>
+
+  <!--Navbar JavaScript-->
+  <script>
+    function myNavbar() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-    </script>
+    }
+  </script>
+  <!--Main content-->
+  <style>
+    .linerly {
+      background: linear-gradient(270deg, #1e90ff, #cce6ff);
+      background-size: 400% 400%;
 
-    <!--Navbar-->
-    <div class="topnav" id="myTopnav">
-      <a href="#" class="active">Home</a>
-      <a href="/blog">Blog</a>
-      <a href="/linerlybot">LinerlyBot</a>
-      <a href="/linerlycraft">Linerlycraft</a>
-      <a href="/creations">Creations</a>
-      <a
-        href="javascript:void(0);"
-        style="font-size: 15px"
-        class="icon"
-        onclick="myNavbar()"
-        >&#9776;</a
-      >
-    </div>
+      -webkit-animation: AnimationName 5s ease infinite;
+      -moz-animation: AnimationName 5s ease infinite;
+      animation: AnimationName 5s ease infinite;
+    }
 
-    <!--Navbar JavaScript-->
-    <script>
-      function myNavbar() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+    @-webkit-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
       }
-    </script>
-    <!--Main content-->
-    <p style="text-align: center; font-size: 6em"><strong>Linerly</strong></p>
-    <p style="text-align: center; font-size: 32px">Welcome to my website!</p>
-    <p style="text-align: center; font-size: 18px">
-      This is where I share all of my things I made here.
-    </p>
 
-    <br />
+      50% {
+        background-position: 100% 50%
+      }
 
-    <hr />
+      100% {
+        background-position: 0% 50%
+      }
+    }
 
-    <br />
+    @-moz-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
+      }
 
-    <p style="text-align: center; font-size: 16px">
-      Check out my other project I'm working on,
-      <a href="https://github.com/Linerly/linerlybot-matrix" target="_blank"
-        >LinerlyBot Matrix!</a
-      >
-    </p>
+      50% {
+        background-position: 100% 50%
+      }
 
-    <br />
+      100% {
+        background-position: 0% 50%
+      }
+    }
 
-    <hr>
+    @keyframes AnimationName {
+      0% {
+        background-position: 0% 50%
+      }
 
-    <br />
+      50% {
+        background-position: 100% 50%
+      }
 
-    <p style="text-align: center; font-size: 14px">Content in my website is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 license</a>.</p>
+      100% {
+        background-position: 0% 50%
+      }
+    }
+  </style>
 
-    <p style="text-align: center; font-size: 14px">
-      <a href="/social-media" target="_blank">Social Media</a> |
-      <a href="https://github.com/Linerly/linerly.github.io/" target="_blank"
-        >Source Code</a
-      >
-      | <a href="/status" target="_blank">Status</a> |
-      <a href="/notes" target="_blank">Notes</a>
-    </p>
-  </body>
+  <p class="linerly" style="text-align: center; font-size: 6em"><strong>Linerly</strong></p>
+  <p style="text-align: center; font-size: 32px">Welcome to my website!</p>
+  <p style="text-align: center; font-size: 18px">
+    This is where I share all of my things I made here.
+  </p>
+
+  <br />
+
+  <hr />
+
+  <br />
+
+  <p style="text-align: center; font-size: 16px">
+    Check out my other project I'm working on,
+    <a href="https://github.com/Linerly/linerlybot-matrix" target="_blank">LinerlyBot Matrix!</a>
+  </p>
+
+  <br />
+
+  <hr>
+
+  <br />
+
+  <p style="text-align: center; font-size: 14px">Content in my website is licensed under a <a
+      href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 license</a>.</p>
+
+  <p style="text-align: center; font-size: 14px">
+    <a href="/social-media" target="_blank">Social Media</a> |
+    <a href="https://github.com/Linerly/linerly.github.io/" target="_blank">Source Code</a>
+    | <a href="/status" target="_blank">Status</a> |
+    <a href="/notes" target="_blank">Notes</a>
+  </p>
+</body>
+
 </html>
