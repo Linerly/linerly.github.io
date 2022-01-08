@@ -6,8 +6,8 @@
 </p>
 
 
-This is my website to show some of my stuff I made, there's also stuff in my website, just check it out at https://linerly.github.io/
+This is my website to show some of my stuff I made, just check them out at https://linerly.github.io/
 
-Uses HTML, CSS, and a bit of JavaScript. (though I plan to get rid of JavaScript entirely)
+Uses HTML, CSS, and a bit of JavaScript. (though I will plan to get rid of JavaScript entirely - or not, just trying out things like PWA)
 
-If you're wondering how did I implement the PWA feature, I use [Workbox](https://github.com/GoogleChrome/workbox).
+If you're wondering how did I implement the PWA feature, I used [Workbox](https://github.com/GoogleChrome/workbox).
