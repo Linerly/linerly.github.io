@@ -2,7 +2,7 @@
 
 <p>
     <a href="https://github.com/Linerly/linerly.github.io/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Linerly/linerly.github.io?style=flat"></a>
-    <img alt="License" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Linerly/status/master/api/website/uptime.json&style=plastic">
+    <img alt="License" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Linerly/status/master/api/website/uptime.json&style=flat">
 </p>
 
 
