@@ -1,52 +1,20 @@
-/* CSS styling for scroll bars. */
-
-/* WebKit-based browsers */
-::-webkit-scrollbar {
-	background: transparent;
-	overflow: visible;
-	width: 17px;
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cce6ff #0f304e;
 }
 
-::-webkit-scrollbar-thumb {
-	background-color: rgba(0, 0, 0, 0.2);
-	border: solid #fff;
-	border-radius: 10px;
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-	background: rgba(0, 0, 0, 0.10);
+*::-webkit-scrollbar-track {
+  background: #0f304e;
 }
 
-::-webkit-scrollbar-thumb:horizontal {
-	border-width: 4px 6px;
-	min-width: 40px;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-	border-width: 6px 4px;
-	min-height: 40px;
-}
-
-::-webkit-scrollbar-track-piece {
-	background-color: #fff;
-}
-
-::-webkit-scrollbar-corner {
-	background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: #ADADAD;
-	box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.10), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
-	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.10), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background-color: #999;
-}
-
-/* ...and for Firefox as well */
-.scroller {
-	overflow-y: scroll;
-	scrollbar-color: #ADADAD #fff;
+*::-webkit-scrollbar-thumb {
+  background-color: #cce6ff;
+  border-radius: 20px;
+  border: 3px solid #0f304e;
 }
