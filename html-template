@@ -49,6 +49,9 @@
     <p id="enable-js"><a href="https://www.enable-javascript.com/" target="_blank">Consider enabling JavaScript in your
         browser!</a></p>
   </noscript>
+
+  <script data-goatcounter="https://goatcounter.linerly.tk/count" async src="//gc.zgo.at/count.js"></script>
+
   <!--Navbar-->
   <div class="topnav" id="myTopnav">
     <a href="/" class="active">Home</a>
