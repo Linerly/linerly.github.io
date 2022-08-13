@@ -101,6 +101,23 @@
         font-size: 32px;
         text-align: center;
       }
+
+      .email-address > .email-address-1::after {
+        content: "click to show";
+      }
+      .email-address:focus {
+        outline: none;
+        text-decoration: underline 2px #0079ff;
+      }
+      .email-address:focus > .email-address-1::after {
+        content: "linerly";
+      }
+      .email-address:focus > .email-address-2::after {
+        content: " at pm";
+      }
+      .email-address:focus > .email-address-3::after {
+        content: " dot me";
+      }
     </style>
 
     <p style="font-size: 24px">Find me everywhere else.</p>
@@ -191,8 +208,11 @@
 
     <p style="font-size: 24px"><a href="https://matrix.to/#/#linerly:matrix.org" target="_blank">Join my Matrix space!</a></p>
 
-    <p style="font-size: 18px">Feel free to say hello over email to <u>hello at linerly dot tk</u></p>
-    <p style="font-size: 12px">For spams or whatever, send them to void@linerly.tk</p>
+    <p style="font-size: 12px">Feel free to say hello over email to <u><span class="email-address" tabindex="0">
+    <span class="email-address-1"></span>
+    <span class="email-address-2"></span>
+    <span class="email-address-3"></span>
+    </span></u></p>
     <br />
 
     <hr>
